@@ -1,4 +1,4 @@
-# shopping
+# Shopping
 Shop Ease is shopping site with responsive website for user-freindly 
 ShopEase is a clean, responsive shopping website designed for a smooth and user-friendly experience. It works perfectly on phones, tablets, and desktops. The layout is simple and modern, making it easy to browse products and navigate between pages. With clear buttons, a sleek design, and fast-loading pages, ShopEase makes online shopping easy and enjoyable for everyone.
 
