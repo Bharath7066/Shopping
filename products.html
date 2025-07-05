@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - ShopEase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ShopEase</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#" id="cart-btn">Cart 🛒</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="headphone.jpg" alt="Product 1">
+        <h3>Wireless Headphones</h3>
+        <p>$49.99</p>
+        <button>Add to Cart</button>
+        <button>Buy</button>
+      </div>
+      <div class="product">
+        <img src="smartwatch.png" alt="Product 2">
+        <h3>Smart Watch</h3>
+        <p>$79.99</p>
+        <button>Add to Cart</button>
+        <button>Buy</button>
+      </div>
+      <div class="product">
+        <img src="speaker.jpg" alt="Product 3">
+        <h3>Bluetooth Speaker</h3>
+        <p>$29.99</p>
+        <button>Add to Cart</button>
+        <button>Buy</button>
+      </div>
+      <div class="product">
+        <img src="iphone.jpg" alt="Product 2">
+        <h3>Iphone</h3>
+        <p>$179.99</p>
+        <button>Add to Cart</button>
+        <button>Buy</button>
+      </div>
+      <div class="product">
+        <img src="macbook.jpg" alt="Product 2">
+        <h3>Mac Book</h3>
+        <p>$679.99</p>
+        <button>Add to Cart</button>
+        <button>Buy</button>
+      </div>
+      <div class="product">
+        <img src="projector.webp" alt="Product 2">
+        <h3>Projector</h3>
+        <p>$79.99</p>
+        <button>Add to Cart</button>
+        <button>Buy</button>
+      </div>
+      <div class="product">
+        <img src="rolex.jpg" alt="Product 2">
+        <h3>Rolex Watch</h3>
+        <p>$779.99</p>
+        <button>Add to Cart</button>
+        <button>Buy</button>
+      </div>
+      <div class="product">
+        <img src="spectes.jpg" alt="Product 2">
+        <h3>Spects</h3>
+        <p>$279.99</p>
+        <button>Add to Cart</button>
+        <button>Buy</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("cart-btn").addEventListener("click", function(event) {
+      event.preventDefault();
+      alert("Cart functionality coming soon!");
+    });
+
+    document.querySelectorAll(".product button").forEach(btn => {
+      btn.addEventListener("click", () => alert("Item added to cart!"));
+    });
+  </script>
+</body>
+</html>

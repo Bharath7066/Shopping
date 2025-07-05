@@ -1,0 +1,64 @@
+<!-- checkout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - ShopEase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ShopEase</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#" id="cart-btn">Cart 🛒</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="checkout">
+    <h2>Checkout</h2>
+    <form id="checkout-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Shipping Address</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="card">Card Number</label>
+        <input type="text" id="card" name="card" required>
+      </div>
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("checkout-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Thank you! Your order has been placed successfully.");
+      window.location.href = "index.html";
+    });
+
+    document.getElementById("cart-btn").addEventListener("click", function(e) {
+      e.preventDefault();
+      alert("Cart functionality coming soon!");
+    });
+  </script>
+</body>
+</html>
